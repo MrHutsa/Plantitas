@@ -262,7 +262,7 @@ def tienda(request):
                 return redirect('tienda')
     else:
             products = Producto.objects.all()
-            return render(request, "venta/tienda.html", {
+            return render(request, "tienda.html", {
             "products": products,'form': form,})
 
 
